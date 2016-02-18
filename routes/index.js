@@ -17,7 +17,7 @@ if (random_num >= 0) {
 };
 
 exports.viewGrid = function(req, res){
-  	res.render('index', projects);
-
   	projects["grid"] = true;
+
+  	res.render('index', projects);
 };
